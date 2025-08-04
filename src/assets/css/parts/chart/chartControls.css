@@ -1,0 +1,26 @@
+#chartControls div {
+  display: inline-block;
+}
+
+#chartControls input,
+#chartControls select {
+  background-color: #ffffff30;
+  border: var(--border);
+  border-radius: var(--box-border-radius);
+  color: var(--color);
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+#chartControls select {
+  font-size: 1.1125rem;
+}
+
+#chartControls label {
+  margin-left: 10px;
+}
+
+#chartControls label::after {
+  content: ':';
+}

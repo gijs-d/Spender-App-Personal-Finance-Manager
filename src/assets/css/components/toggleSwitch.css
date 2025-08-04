@@ -1,0 +1,32 @@
+.toggle {
+  width: 40px !important;
+  height: 25px !important;
+  border-radius: 30px;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 5px white;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+}
+.toggle span {
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background-color: red;
+  box-shadow: 0 0 5px red;
+
+  top: 2px;
+  left: 2px;
+}
+.toggle input:checked + span {
+  left: unset;
+  right: 2px;
+  background-color: #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}

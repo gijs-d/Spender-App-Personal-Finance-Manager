@@ -1,0 +1,55 @@
+.chartsPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.chartsPage .chartDiv {
+  min-height: 10%;
+  max-height: 100%;
+  flex-grow: 2;
+}
+.chartsPage .top {
+  flex-grow: 0;
+  width: 100%;
+}
+.chartType {
+  max-width: 200px;
+  align-items: center;
+}
+.chartType label {
+  margin: 0;
+  padding: 0;
+}
+.chartsPage select {
+  background-color: #ffffff30;
+  border: var(--border);
+  border-radius: var(--box-border-radius);
+  color: var(--color);
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+.top h3 {
+  text-align: center;
+}
+.chartSettings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chartSettings .flex {
+  align-items: center;
+}
+.chartsPage .chartjsContainer {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+.chartsPage .toggle {
+  margin: 0 5px;
+}
+
+.chartsPage .toggle span {
+  background-color: white !important;
+  box-shadow: 0 0 5px white !important;
+}

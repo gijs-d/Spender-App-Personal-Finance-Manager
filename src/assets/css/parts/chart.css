@@ -1,0 +1,22 @@
+.chartContainer {
+  position: relative;
+}
+
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30px;
+  left: 0;
+  max-width: calc(100% - 50px);
+  position: absolute;
+  top: 0;
+}
+
+.legende p {
+  border-radius: 5px;
+  height: 100%;
+  line-height: 30px;
+  margin: 0;
+  margin: 3px;
+  padding: 0 5px;
+}

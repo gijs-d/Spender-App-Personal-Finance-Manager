@@ -1,0 +1,54 @@
+.itemsPage section details:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.itemsPage summary div {
+  display: inline-flex;
+  width: calc(100% - 20px);
+  justify-content: space-between;
+}
+.itemsPage summary div span.total {
+  width: 85px;
+  text-align: right;
+}
+.itemsPage summary div span.amount {
+  width: 85px;
+  text-align: center;
+}
+.itemsPage .details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.itemsPage .store {
+  box-shadow: 0 0 5px white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.itemsPage .store h4 {
+  margin: 5px 0;
+}
+.itemsPage .store p {
+  margin: 0;
+}
+.itemsPage .sort {
+  display: flex;
+  justify-content: center;
+}
+.itemsPage .sort label {
+  width: unset;
+  padding-right: 5px;
+}
+.itemsPage .sort select {
+  background-color: #ffffff30;
+  border: var(--border);
+  border-radius: var(--box-border-radius);
+  color: var(--color);
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+.itemsPage .allTotal {
+  margin: 20px auto;
+}

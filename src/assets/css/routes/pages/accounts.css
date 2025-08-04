@@ -1,0 +1,82 @@
+.accountsPage h3 {
+  text-align: center;
+}
+
+.account {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  border: thin solid grey;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.account:first-of-type {
+  margin-top: 0;
+}
+.account.active {
+  background-color: #ffffff3a;
+  border: thin solid lightgrey;
+}
+.accountsPage .delete {
+  border: thin solid red;
+  color: red;
+  width: 100%;
+  max-width: 250px;
+  margin: 30px auto;
+  display: block;
+  padding: 10px;
+  background-color: #ff00003a;
+}
+
+.accountsPage form input {
+  width: 100%;
+}
+.accountsPage .balance {
+  float: right;
+}
+
+.accountsPage .accountForm {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+}
+.accountsPage .accountForm .name {
+  width: 50px;
+  flex: 1;
+}
+.accountsPage .accountForm .update,
+.accountsPage .accountForm .cancel {
+  margin-top: 10px;
+}
+.accountsPage .editBtn {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+  margin-left: 10px;
+  border: none;
+}
+
+.accountsPage .accounts {
+  padding: 10px;
+  max-width: 250px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+}
+.accountsPage .accounts .accountForm {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+.accountsPage .addUser {
+  padding: 10px;
+  width: 100%;
+  color: #0f0;
+  border: thin solid #0f0;
+  background-color: #00ff003a;
+}

@@ -1,0 +1,220 @@
+.mainPage {
+  height: calc(100% - 50px);
+}
+
+.mainPage section {
+  align-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  justify-content: center;
+}
+
+.mainPage section h1 {
+  margin: 0;
+  max-height: min(40px, 50%);
+}
+.mainPage .secondTotal {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+.mainPage section .addForm,
+.mainPage section .halfSection {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+.mainPage section .addForm form {
+  background-color: #000000cc;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 2;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+.mainPage section .addForm form .formTitle {
+}
+.mainPage section .addForm form .formTitle h3 {
+  margin: 5px 0 10px;
+}
+
+.mainPage section .addForm form .closeForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: red;
+  border: thin solid red;
+  background-color: #ff00003a;
+}
+
+.mainPage form * {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mainPage form summary,
+.mainPage form .details,
+.mainPage form input,
+.mainPage form select,
+.mainPage form textarea {
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+.mainPage form details {
+  margin: 15px 0 0;
+}
+
+.mainPage form .details {
+  background-color: black;
+}
+
+.mainPage form input[type='submit'] {
+  margin-top: 20px;
+  padding: 10px;
+  color: #0f0;
+  border: thin solid #0f0;
+  background-color: #00ff003a;
+}
+.mainPage form input[type='button'] {
+  margin-top: 5px;
+}
+
+.mainPage label {
+  display: block;
+  padding: 10px 0 5px;
+  width: 100%;
+}
+
+.mainPage form .subType {
+  margin: 5px 0 0;
+}
+
+.mainPage details {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mainPage .addBtn {
+  background-color: #000000aa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  border: none;
+}
+.mainPage .addFormBtn {
+  animation: breath 4s alternate infinite;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.mainPage .addFormBtn::before,
+.mainPage .addFormBtn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+.mainPage .addFormBtn::after {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  filter: blur(20px);
+  animation: hueRotateBlur 10s infinite;
+}
+.mainPage .addFormBtn::before {
+  width: calc(100% + 4px);
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #00ff00, #0000ff, #ff0000);
+  animation: hueRotate 11s infinite;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(359deg);
+  }
+}
+@keyframes hueRotateBlur {
+  0% {
+    filter: hue-rotate(0) blur(30px);
+  }
+  100% {
+    filter: hue-rotate(359deg) blur(30px);
+  }
+}
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.mainPage .addForm {
+  position: relative;
+  width: 100%;
+}
+
+.mainPage .chartContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.mainPage .chartjsDiv {
+  height: 100%;
+  width: 50%;
+  flex-grow: 1;
+}
+.mainPage .chartjsDiv h3 {
+  height: 25px;
+  margin: 0;
+}
+.mainPage .chartjsDiv .chartjsContainer,
+.mainPage .chartjsDiv .chartjs {
+  height: calc(100% - 25px);
+}
+
+.mainPage .chartjsDivs {
+  height: 40%;
+}
+
+.mainPage .chartlwDiv {
+  height: 40%;
+  width: 100%;
+}

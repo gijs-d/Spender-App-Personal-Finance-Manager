@@ -1,0 +1,103 @@
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.transaction.active {
+  background-color: #00ff0055 !important;
+}
+.transactions,
+.transaction details {
+  padding: 0;
+  width: 100%;
+}
+
+.transaction:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+form.edit {
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+}
+.transactionSummary {
+  display: inline-flex;
+  width: calc(100% - 20px);
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.transactionSummary p {
+  margin: 0;
+}
+
+.transactionSummary p.amount {
+  width: 85px;
+  text-align: right;
+}
+
+.types {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.total {
+  text-align: center;
+  margin: 5px 0 0;
+}
+
+.transactionDetails .imgBtns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  background-color: #000000cc;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+}
+
+.transactionDetails .imgBtn {
+  background: no-repeat center center;
+  background-size: 60%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 0;
+}
+.transactionDetails .editBtn {
+  filter: invert(1);
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+}
+.transactionDetails .deleteBtn {
+  border: thin solid red;
+  background-size: 50%;
+}
+
+.transactionDetails p {
+  margin: 5px 0;
+  display: inline-block;
+}
+.transactionDetails {
+  padding: 5px;
+}
+.transactionDetails {
+  display: flex;
+}
+.transactionDetails .info {
+  display: inline-block;
+  margin: 0 auto;
+  width: 90%;
+}
+.editForm {
+  position: absolute;
+}
+.transactionDetails .listDetails summary {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}

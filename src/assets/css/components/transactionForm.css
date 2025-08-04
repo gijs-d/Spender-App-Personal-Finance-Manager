@@ -1,0 +1,187 @@
+.transactionForm {
+  background-color: #000000cc;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 20;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+.transactionForm .formTitle h3 {
+  margin: 5px 0 10px;
+}
+
+.transactionForm .closeForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: red;
+  border: thin solid red;
+  background-color: #ff00003a;
+}
+.transactionForm * {
+  box-sizing: border-box;
+  width: 100%;
+}
+.transactionForm summary,
+.transactionForm .details,
+.transactionForm input,
+.transactionForm select,
+.transactionForm textarea {
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+
+.transactionForm details {
+  margin: 15px 0 0;
+}
+
+.transactionForm .details {
+  background-color: black;
+}
+
+.transactionForm input[type='submit'] {
+  margin-top: 20px;
+  padding: 10px;
+  color: #0f0;
+  border: thin solid #0f0;
+  background-color: #00ff003a;
+}
+
+.transactionForm label {
+  display: block;
+  padding: 10px 0 5px;
+  width: 100%;
+}
+
+.transactionForm .subType {
+  margin: 5px 0 0;
+}
+
+.transactionForm details {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.transactionForm .addBtn {
+  background-color: transparent;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px;
+  text-align: center;
+}
+
+.transactionForm .addForm {
+  position: relative;
+  width: 100%;
+}
+
+.transactionForm .delete {
+  padding: 5px;
+  border-radius: 5px;
+  border: thin solid red;
+  color: red;
+  width: 25px;
+  margin-left: auto;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.transactionForm .listItem {
+  margin: 5px 0 0;
+}
+.transactionForm .listItem .itemType {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  color: white;
+  width: 40px;
+  margin-left: auto;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.transactionForm .listItem .listItemAmount {
+  width: 2.5rem;
+}
+.transactionForm .listItem .listItemName {
+  flex-grow: 2;
+}
+
+.transactionForm .listItem .listItemPrice,
+.transactionForm .listItem .listItemPrice input {
+  width: 3.5rem;
+}
+.transactionForm .listItem .itemTotal {
+  width: 3.5rem;
+}
+
+.transactionForm .listItem .suggest input {
+  height: 100%;
+}
+
+.transactionForm .listItem .suggest li {
+  font-size: 13.333px;
+}
+
+.transactionForm .listItem input[type='number']::-webkit-inner-spin-button,
+.transactionForm .listItem input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.transactionForm .listItem input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.transactionForm .toggle {
+  padding-top: 10px;
+}
+
+.transactionForm .toggle label:first-child {
+  padding: 0;
+}
+
+.transactionForm #timeDiv label {
+  width: 100%;
+}
+
+.transactionForm .delete {
+  padding: 5px;
+  border-radius: 5px;
+  border: thin solid red;
+  color: red;
+  width: 25px;
+  margin-left: auto;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.transactionForm .newAmount {
+  text-align: left;
+  margin: 5px 0 0;
+}
+.transactionForm .itemUnit {
+  width: 55px;
+}

@@ -1,0 +1,58 @@
+.pagesComponent section {
+  height: calc(100% - 20px);
+}
+
+.pagesComponent section div {
+  height: 50%;
+}
+
+.pagesComponent h3.found {
+  color: greenyellow;
+}
+
+.pagesComponent h3.notFound {
+  color: red;
+}
+
+.pagesComponent li {
+  list-style: none;
+}
+
+.pagesComponent li:nth-child(even) {
+  background-color: #ffffff20;
+}
+
+.pagesComponent li p {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px;
+}
+
+.pagesComponent .pageList {
+  box-sizing: border-box;
+  height: calc((100% - 32px));
+  margin: 0;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.pagesComponent .pageList span {
+  float: right;
+}
+
+.pagesComponent .pageList span.pageName {
+  float: unset;
+  max-width: calc(100% - 20px);
+  word-break: break-word;
+}
+
+.pagesComponent .pageList summary {
+  border-top: var(--border);
+  text-align: center;
+}
+
+.pagesComponent .pageList summary:hover {
+  background-color: #ffffff10;
+}
